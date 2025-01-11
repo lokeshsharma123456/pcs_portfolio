@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation Bar (You can include this if needed) -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pcs/pcs.html">Firm: M/S PRAKASH CHANDRA SHARMA </a></li>
+            <li><a href="bhag/bhag.html">Firm: M/S BHAGWATI ENTERPRISES </a></li>
+            <li><a href="shiva/shiva.html">Firm: M/S SHIVA ENTERPRISES</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Company Name -->
+        <h1>JAI CHATKESWAR BABA</h1>
+        <div class="image-chatkeswar">
+            <img src="images/chatkeswar.png" alt="Image Description">
+        </div>
+
+        <!-- Contact Query Form -->
+        <section id="contact-query">
+            <h2>Contact Query</h2>
+            <!-- Update action attribute to point to submit.php -->
+            <form id="contactForm" action="submit.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required><br><br>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+                <input type="submit" value="Submit">
+            </form>
+            <div id="status"></div>
+        </section>
+    </div>
+
+    <!-- JavaScript for Form Submission and Saving Locally -->
+
+</body>
+
+</html>
